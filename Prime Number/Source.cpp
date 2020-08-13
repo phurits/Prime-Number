@@ -4,6 +4,11 @@ int main()
 {
 	int i,input,count=0;
 	scanf_s("%d", &input);
+	if (input <= 0)
+	{
+		printf("Error");
+		return 0;
+	}
 	for (i = 2; i <= input; i++)
 	{
 		if (input % i == 0)
